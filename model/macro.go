@@ -1,6 +1,6 @@
 package model
 
-type Work struct {
+type Macro struct {
 	ID int64 `json:"id"`
 	StudentID int64 `json:"student_id"`
 	Birth string `json:"birth"`
