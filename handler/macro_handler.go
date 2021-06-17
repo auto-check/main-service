@@ -28,6 +28,7 @@ func NewMacroHandler(gserver *grpc.Server, us usecase.MacroUsecase) *MacroHandle
 
 func (sh *MacroHandler) CreateMacro(ctx context.Context, r *emptypb.Empty) (*emptypb.Empty, error) {
 	md, _ := metadata.FromIncomingContext(ctx)
+	log.Println(ctx.Value("student_id"))
 	id, err := strconv.Atoi(md.Get("student_id")[0])
 	if err != nil {
 		log.Errorf(fmt.Sprintf("Error %s\n%s", err, debug.Stack()))
