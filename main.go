@@ -47,13 +47,13 @@ func main() {
 	}
 	defer dbConn.Close()
 
-	sr := repository.NewMacroRepository(dbConn)
-	su := usecase.NewStudentUsecase(sr)
+	mr := repository.NewMacroRepository(dbConn)
+	mu := usecase.NewMacroUsecase(mr)
 	server := grpc.NewServer(
 		grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer(
 			grpc_auth.UnaryServerInterceptor(middleware.Authenticator))))
 
-	handler.NewMacroHandler(server, su)
+	handler.NewMacroHandler(server, mu)
 
 	lis, err := net.Listen("tcp", ":"+os.Getenv("PORT"))
 	if err != nil {
