@@ -47,6 +47,8 @@ github.com/auto-check/common-module v0.0.0-20210608124529-3a335477962b h1:QnHUw9
 github.com/auto-check/common-module v0.0.0-20210608124529-3a335477962b/go.mod h1:Rec/xHv9WnJ8VR93uIIau3tabDtXNyrRU6Z9cSOFCUs=
 github.com/auto-check/common-module v0.0.0-20210609135655-43c18a61a1ee h1:NXqx1j2pRV0LkkwZS0ImzRvYfh/aPiSnics59rAWvoM=
 github.com/auto-check/common-module v0.0.0-20210609135655-43c18a61a1ee/go.mod h1:DrtcCBnUVy623s6Bx6P2nkLXNl8ZWXeHraIpqDhf77s=
+github.com/auto-check/protocol-buffer v0.0.0-20210617142906-ee4922cbdb8b h1:/Eg1Rhvu9VJl+4mexAaG+AwRJfO8KklSXetkrINSWjg=
+github.com/auto-check/protocol-buffer v0.0.0-20210617142906-ee4922cbdb8b/go.mod h1:zAdtFCAvsjHGFXyVPX3ix3mjN5Qo1LfWhucu53e6sBQ=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d/go.mod h1:6QX/PXZ00z/TKoufEY6K/a0k6AhaJrQKdFe6OfVXsa4=
