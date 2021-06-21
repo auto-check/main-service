@@ -1,4 +1,4 @@
-module main
+module github.com/auto-check/main-service
 
 go 1.15
 
