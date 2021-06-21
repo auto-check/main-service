@@ -1,7 +1,7 @@
 package client
 
 import (
-	mainpb "github.com/auto-check/main-service/protocol-buffer/golang/main"
+	mainpb "github.com/auto-check/protocol-buffer/golang/main"
 	"github.com/joho/godotenv"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"

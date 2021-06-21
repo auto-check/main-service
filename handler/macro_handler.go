@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 	"fmt"
-	mainpb "github.com/auto-check/main-service/protocol-buffer/golang/main"
+	mainpb "github.com/auto-check/protocol-buffer/golang/main"
 	"github.com/auto-check/main-service/usecase"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
