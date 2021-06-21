@@ -3,12 +3,12 @@ package handler
 import (
 	"context"
 	"fmt"
+	mainpb "github.com/auto-check/main-service/protocol-buffer/golang/main"
+	"github.com/auto-check/main-service/usecase"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/types/known/emptypb"
-	mainpb "main/protocol-buffer/golang/main"
-	"main/usecase"
 	"runtime/debug"
 	"strconv"
 )

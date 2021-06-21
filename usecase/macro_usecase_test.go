@@ -1,8 +1,8 @@
 package usecase
 
 import (
+	"github.com/auto-check/main-service/repository/mocks"
 	"github.com/stretchr/testify/assert"
-	"main/repository/mocks"
 	"testing"
 )
 

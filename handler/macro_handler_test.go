@@ -2,13 +2,13 @@ package handler
 
 import (
 	"context"
+	"github.com/auto-check/main-service/usecase/mocks"
 	"github.com/joho/godotenv"
 	log "github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/protobuf/types/known/emptypb"
-	"main/usecase/mocks"
 	"testing"
 )
 

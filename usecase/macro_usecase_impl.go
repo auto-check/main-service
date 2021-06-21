@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"main/repository"
+	"github.com/auto-check/main-service/repository"
 )
 
 type macroUsecase struct {
