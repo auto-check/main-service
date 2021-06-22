@@ -27,8 +27,12 @@ func (m *MockMainClient) EXPECT() *mockMainClientRecorder {
 	return m.recorder
 }
 
-func (m *MockMainClient) CreateMacro(ctx context.Context, in *emptypb.Empty) (*emptypb.Empty, error) {
+func (m *MockMainClient) CreateMacro(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*emptypb.Empty, error) {
 	s := []interface{}{ctx, in}
+	for _, opt:= range opts {
+		s = append(s, opt)
+	}
+
 	ret := m.ctrl.Call(m, "CreateMacro", s...)
 	ret0, _ := ret[0].(*emptypb.Empty)
 	ret1, _ := ret[1].(error)
@@ -44,7 +48,10 @@ func (mr *mockMainClientRecorder) CreateMacro(arg0, arg1 interface{}) *gomock.Ca
 
 func (m *MockMainClient) GetLogListWithID(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*mainpb.GetLogListWithIDResponse, error){
 	s := []interface{}{ctx, in}
-	s = append(s, opts)
+	for _, opt:= range opts {
+		s = append(s, opt)
+	}
+
 	ret := m.ctrl.Call(m, "GetLogListWithID", s...)
 	ret0, _ := ret[0].(*mainpb.GetLogListWithIDResponse)
 	ret1, _ := ret[1].(error)
@@ -59,7 +66,10 @@ func (mr *mockMainClientRecorder) GetLogListWithID(arg0, arg1 interface{}) *gomo
 
 func (m *MockMainClient) GetMacroStatus(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*mainpb.GetMacroStatusResponse, error){
 	s := []interface{}{ctx, in}
-	s = append(s, opts)
+	for _, opt:= range opts {
+		s = append(s, opt)
+	}
+
 	ret := m.ctrl.Call(m, "GetMacroStatus", s...)
 	ret0, _ := ret[0].(*mainpb.GetMacroStatusResponse)
 	ret1, _ := ret[1].(error)
@@ -74,7 +84,10 @@ func (mr *mockMainClientRecorder) GetMacroStatus(arg0, arg1 interface{}) *gomock
 
 func (m *MockMainClient)  GetMacroSecret(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*mainpb.GetMacroSecretResponse, error){
 	s := []interface{}{ctx, in}
-	s = append(s, opts)
+	for _, opt:= range opts {
+		s = append(s, opt)
+	}
+
 	ret := m.ctrl.Call(m, "GetMacroSecret", s...)
 	ret0, _ := ret[0].(*mainpb.GetMacroSecretResponse)
 	ret1, _ := ret[1].(error)
@@ -89,7 +102,10 @@ func (mr *mockMainClientRecorder)  GetMacroSecret(arg0, arg1 interface{}) *gomoc
 
 func (m *MockMainClient) ControlMacro(ctx context.Context, in *mainpb.ControlMacroRequest, opts ...grpc.CallOption) (*emptypb.Empty, error){
 	s := []interface{}{ctx, in}
-	s = append(s, opts)
+	for _, opt:= range opts {
+		s = append(s, opt)
+	}
+
 	ret := m.ctrl.Call(m, "ControlMacro", s...)
 	ret0, _ := ret[0].(*emptypb.Empty)
 	ret1, _ := ret[1].(error)
