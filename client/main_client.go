@@ -5,7 +5,6 @@ import (
 	"github.com/joho/godotenv"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
-	"os"
 	"sync"
 )
 
@@ -24,7 +23,7 @@ var (
 func GetMainClient() mainpb.MainClient {
 	once.Do(func() {
 		conn, _ := grpc.Dial(
-			"127.0.0.1:"+os.Getenv("PORT"),
+			"127.0.0.1:5001",
 			grpc.WithInsecure(),
 			grpc.WithBlock())
 
